@@ -9,7 +9,7 @@ const CardDetail = () => {
           className="border border-slate-400 rounded-sm p-2 w-4/6"
           type="text"
           placeholder="Card Number"
-          disabled="true"
+          disabled={true}
           defaultValue="xxxxxxxxxxxxxxxxxx"
         />
       </div>

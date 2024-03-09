@@ -13,7 +13,7 @@ const Profile = () => {
               type="text"
               placeholder="Card Number"
               defaultValue="xxxxxxxxxxxxx"
-              disabled="true"
+              disabled={true}
             />
           </div>
 

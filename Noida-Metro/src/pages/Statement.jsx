@@ -14,6 +14,7 @@ const Statement = () => {
                 type="text"
                 placeholder="Card Number"
                 defaultValue="xxxxxxxxxxxxx"
+                disabled={true}
               />
             </div>
             <div className="flex flex-col gap-y-10">
