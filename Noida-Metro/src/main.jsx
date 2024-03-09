@@ -7,6 +7,8 @@ import Homepage from "./pages/Homepage.jsx";
 import Recharge from "./pages/Recharge.jsx";
 import Details from "./components/homepage/Details.jsx";
 import Statement from "./pages/Statement.jsx";
+import Profile from "./pages/Profile.jsx";
+import CardHotlist from "./pages/CardHotlist.jsx";
 
 const route = createBrowserRouter([
   {
@@ -28,6 +30,14 @@ const route = createBrowserRouter([
       {
         path: "/homepage/statement",
         element: <Statement />,
+      },
+      {
+        path: "/homepage/profile",
+        element: <Profile />,
+      },
+      {
+        path: "/homepage/hotlist",
+        element: <CardHotlist />,
       },
     ],
   },

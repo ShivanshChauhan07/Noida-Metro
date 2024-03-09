@@ -14,8 +14,10 @@ const Header = () => {
         </div>
         <div className=" w-72 flex justify-around items-center">
           <img className="w-8" src="/login.png" alt="" />
-          <h5 className="text-lg">name</h5>
-          <button className="text-md font-medium text-white bg-red-600 p-2 rounded-md">
+          <h5 className="text-lg text-nowrap text-ellipsis overflow-hidden w-[55%]">
+            Shivansh Chauhan asfasfasf
+          </h5>
+          <button className="text-md font-medium text-white bg-red-600 p-2 rounded-md hover:bg-red-700">
             Logout
           </button>
         </div>

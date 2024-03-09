@@ -35,7 +35,7 @@ const Sidebar = () => {
           }}
         >
           <div className="Wrapper flex justify-between px-1 cursor-pointer ">
-            <h5 className="text-2xl font-medium text-center">
+            <h5 className="text-2xl font-medium text-center hover:text-orange-400">
               Customer-Card Management
             </h5>
             <div className="my-auto">
@@ -55,33 +55,45 @@ const Sidebar = () => {
             initial="initial"
             whileInView="final"
           >
-            <motion.h6
-              variants={variants}
-              className="text-center text-lg hover:bg-slate-300 cursor-pointer border border-black p-1"
-            >
-              <Link to={"/homepage"}> Card Details</Link>
-            </motion.h6>
-            <motion.h6
-              variants={variants}
-              className="text-center text-lg hover:bg-slate-300 cursor-pointer border border-black p-1"
-            >
-              <Link to={"/homepage/recharge"}> Recharge Card</Link>
-            </motion.h6>
-            <motion.h6
-              variants={variants}
-              className="text-center text-lg hover:bg-slate-300 cursor-pointer border border-black p-1"
-            >
-              Card Hotlist
-            </motion.h6>
+            <Link to={"/homepage"}>
+              <motion.h6
+                variants={variants}
+                className="text-center text-lg hover:bg-slate-300 cursor-pointer border border-black p-1"
+              >
+                Card Details
+              </motion.h6>
+            </Link>
+            <Link to={"/homepage/recharge"}>
+              <motion.h6
+                variants={variants}
+                className="text-center text-lg hover:bg-slate-300 cursor-pointer border border-black p-1"
+              >
+                Recharge Card
+              </motion.h6>
+            </Link>
+            <Link to={"/homepage/hotlist"}>
+              <motion.h6
+                variants={variants}
+                className="text-center text-lg hover:bg-slate-300 cursor-pointer border border-black p-1"
+              >
+                Card Hotlist
+              </motion.h6>
+            </Link>
           </motion.div>
         </div>
         <div className="">
-          <h5 className="text-2xl font-medium text-center">
-            <Link to={"/homepage/statement"}>View Card Statement</Link>
-          </h5>
+          <Link to={"/homepage/statement"}>
+            <h5 className="text-2xl font-medium text-center hover:text-orange-400">
+              View Card Statement
+            </h5>
+          </Link>
         </div>
         <div className="">
-          <h5 className="text-2xl font-medium text-center">My Profile</h5>
+          <Link to={"/homepage/profile"}>
+            <h5 className="text-2xl font-medium text-center cursor-pointer hover:text-orange-400">
+              My Profile
+            </h5>
+          </Link>
         </div>
       </div>
     </div>
